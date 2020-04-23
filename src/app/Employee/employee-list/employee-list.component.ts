@@ -11,6 +11,7 @@ import { Observable } from 'rxjs';
 export class EmployeeListComponent implements OnInit {
 
   employeeList$: Observable<Employees[]>;
+  query: string;
 
   constructor(private employeeService: EmployeeService) { }
 
